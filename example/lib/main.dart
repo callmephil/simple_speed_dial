@@ -39,10 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(child: Text(_text)),
-      floatingActionButton: SpeedDial(
+      floatingActionButton: SimpleSpeedDial(
         child: const Icon(Icons.add),
-        speedDialChildren: <SpeedDialChild>[
-          SpeedDialChild(
+        speedDialChildren: <SimpleSpeedDialChildModel>[
+          SimpleSpeedDialChildModel(
             child: const Icon(Icons.directions_run),
             foregroundColor: Colors.white,
             backgroundColor: Colors.red,
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
           ),
-          SpeedDialChild(
+          SimpleSpeedDialChildModel(
             child: const Icon(Icons.directions_walk),
             foregroundColor: Colors.black,
             backgroundColor: Colors.yellow,
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
           ),
-          SpeedDialChild(
+          SimpleSpeedDialChildModel(
             child: const Icon(Icons.directions_bike),
             foregroundColor: Colors.white,
             backgroundColor: Colors.green,

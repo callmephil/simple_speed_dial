@@ -4,7 +4,7 @@ version: 0.1.7
 homepage: https://github.com/janoschp/simple_speed_dial
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -12,3 +12,4 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: 1.0.4
+  very_good_analysis: ^5.1.0
